@@ -98,19 +98,16 @@
 					<h2 class="text-center text-uppercase">Электронное меню</h2>
 					<hr>
 				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="gallery-wrapper">
-						{% for el in product %}
-						<div class="card col">
-						  <h3>{{ el.name }}</h3>
-						  <h5>{{ el.character }}</h5>
-						  <img src="{{ el.image.url }}" class="img-responsive gallery-img" alt="Pizza">
-						  <h5 class="price">{{ el.price }}₽</b>
-						</div>
-						{% endfor %}
-					  </div>
+				<div class="row">
+					{% for el in product %}
+					<div class="col-md-4 col-sm-4">
+					  <h3>{{ el.name }}</h3>
+					  <h5>{{ el.character }}</h5>
+					  <img src="{{ el.image.url }}" class="img-responsive gallery-img" alt="Pizza">
+					  <h5 class="price">{{ el.price }}₽</b>
 					</div>
-				</div>	
+					{% endfor %}
+				</div>
 			</div>
 		</div>
 	</section>
@@ -140,19 +137,18 @@
 				<div class="col-md-2"></div>
 				<div class="col-md-4 col-sm-4">
 					<h3 class="padding-bottom-10 text-uppercase">Наш адресс</h3>
-					<p><i class="fa fa-map-marker contact-fa"></i> ул. Куйбышева, 50/150, Батайск</p>
+					<p><i class="contact-fa"></i> ул. Куйбышева, 50/150, Батайск</p>
 					<p>
-						<i class="fa fa-phone contact-fa"></i> 
+						<i class="contact-fa"></i> 
 						<a href="tel:010-020-0340" class="contact-link">+70000000000</a>
 					</p>			
-					<p><i class="fa fa-envelope-o contact-fa"></i> 
+					<p><i class="contact-fa"></i> 
                     	<a href="mailto:hello@company.com" class="contact-link">polovinkathebest@mail.ru</a></p>
 				</div>
 				<div class="col-md-4 col-sm-4">
 					<h3 class="text-uppercase">Часы работы</h3>
-					<p><i class="fa fa-clock-o contact-fa"></i> 8:00-20:00</p>
-					<p><i class="fa fa-bell-o contact-fa"></i> Без выходных</p>
-                    <p><i class="fa fa-download contact-fa"></i> 
+					<p><i class="contact-fa"></i> 8:00-20:00</p>
+					<p><i class="contact-fa"></i> Без выходных</p>
 			  	</div>
 			</div>
 		</div>

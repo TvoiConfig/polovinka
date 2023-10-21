@@ -10,7 +10,7 @@ class Products(models.Model):
     name = models.CharField(max_length=50, verbose_name="Имя")
     type = models.CharField(max_length=50, choices=CHOICE_TYPE, default='Pizza', verbose_name="Тип")
     character = models.TextField(max_length=100, verbose_name="Характеристика")
-    price = models.IntegerField(max_length=50, verbose_name="Цена")
+    price = models.IntegerField(verbose_name="Цена")
     image = models.ImageField(null=True, blank=True, upload_to="image/")
 
     class Meta:
