@@ -1,0 +1,14 @@
+Использованные библиотеки/модули:
+crispy-bootstrap5   0.7
+Django              4.2.6
+django-crispy-forms 2.0
+ninja               1.11.1
+Pillow              10.0.1
+requests            2.31.0
+
+Админ панель:
+dima
+123
+
+Запуск сервера:
+python manage.py runserver
